@@ -1,0 +1,670 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: #000;
+}
+
+header {
+    background-color: darkblue;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.menu-nav {
+    display: flex;
+    align-items: center;
+}
+
+.profil-teks {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-left: 4px;
+}
+
+.profil {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: red 0.3s ease;
+}
+
+nav ul li a:target {
+    background-color: red;
+}
+
+nav ul li a:hover {
+    background-color: red;
+}
+
+.profil-s {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 20px;
+}
+
+.profil-c {
+    max-width: 60%;
+}
+
+.profil-c h1 {
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 30px;
+    padding-left: 10%;
+}
+
+.profil-c h2 {
+    font-size: 40px;
+    font-weight: bold;
+    padding-left: 10%;
+}
+
+.profil-c h3 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 60px;
+    padding-left: 10%;
+}
+
+.profil-c p {
+    line-height: 1.6;
+    padding-left: 10%;
+}
+
+.profil-poto-kontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+    margin: 0 auto;
+        
+}
+.profil-poto img {
+    width: 300x;
+    height: 350px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.kontak-info {
+    margin-top: 15px;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+    height: 150px;
+    width: 300px;
+    padding-bottom: 25px;
+    padding-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 0 5px blue;
+}
+
+.kontak-info h4 {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+.kontak-info p {
+    color: #000;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.kontak-info p img {
+    width: 30px;
+    height: 30px;
+    margin-left: 8px;
+}
+
+
+/*BATAS*/
+.divider {
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    margin: 0;
+}
+
+header {
+    background-color: darkblue;
+    padding: 10px 0;
+}
+
+.navbar1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.menu-nav1 {
+    display: flex;
+    align-items: center;
+}
+
+.profil-teks1 {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-left: 4px;
+}
+
+.profil {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.ul1 {
+    list-style: none;
+    display: flex;
+}
+
+.ul1 li {
+    margin-left: 20px;
+}
+
+.ul1 li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: red 0.3s;
+}
+
+.ul1 li a:hover, ul1 li a.active {
+    background-color: red;
+}
+
+.konten1 {
+    padding: 30px;
+    text-align: center;
+}
+
+.konten1 h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 60px;
+    position: relative;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    position: relative;
+    width: 100%;
+}
+
+.timeline-ikon {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 5px;
+    margin-top: -40px;
+}
+
+.timeline-ikon::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 155px;
+    background-color: white;
+    top: 100%;
+    left: 50%;
+    margin-top: -10px;
+    transform: translateX(-50%);
+}
+
+.timeline-item:last-child .timeline-ikon::before {
+    display: none;
+}
+
+.timeline-isi {
+    text-align: left;
+    padding: 10px;
+    border-radius: 8px;
+    width: 50%;
+    margin-left: 30px;
+}
+
+.timeline-isi h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.timeline-isi p {
+    margin-top: 5px;
+    line-height: 1.6;
+}
+
+.timeline-image {
+    margin-left: -100px;
+}
+
+.timeline-image img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    padding-top: 40px;
+}
+
+.disen {
+    position: absolute;
+    bottom: 100px;
+    right: 20px;
+    width: 350px;
+    height: auto;
+}
+
+.disen img {
+    width: 100%;
+    height: auto;
+}
+
+/*BATAS*/
+header {
+    background-color: darkblue;
+    padding: 10px 0;
+}
+
+.navbar2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.menu-nav2 {
+    display: flex;
+    align-items: center;
+}
+
+.profil-teks2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-left: 4px;
+}
+
+.profil {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.ul2 {
+    list-style: none;
+    display: flex;
+}
+
+.ul2 li {
+    margin-left: 20px;
+}
+
+.ul2 li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: red 0.3s;
+}
+
+.ul2 li a:hover, .ul2 li a.active {
+    background-color: red;
+}
+
+.konten2 {
+    color: white;
+    padding: 20px;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(wok.png);
+    background-size: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.konten2 h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 80px;
+}
+
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+.experience-item {
+    padding: 20px;
+    color: white;
+    border-radius: 50px;
+    width: 500px;
+    height: 100px;
+    padding-top: 25px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+.desainer {
+    background-color: purple;
+    align-self: flex-start;
+    margin-left: 100px;
+}
+
+.teknisi {
+    background-color: orange;
+    align-self: flex-end;
+    margin-right: 100px;
+}
+
+.noc {
+    background-color: green;
+    align-self: flex-start;
+    margin-left: 100px;
+}
+
+
+/*BATAS*/
+header {
+    background-color: darkblue;
+    padding: 10px 0;
+}
+
+.navbar3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.menu-nav3 {
+    display: flex;
+    align-items: center;
+}
+
+.profil-teks3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-left: 4px;
+}
+
+.profil {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.ul3 {
+    list-style: none;
+    display: flex;
+}
+
+.ul3 li {
+    margin-left: 20px;
+}
+
+.ul3 li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: red 0.3s;
+}
+
+.ul3 li a:hover, .ul3 li a.active {
+    background-color: red;
+}
+
+.konten3 {
+    color: white;
+    padding: 20px;
+    text-align: center;
+    background-size: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.konten3 h1 {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.menu-skill {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.soft-skill, .hard-skill {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.soft-skill h2, .hard-skill h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.soft-skill h2 {
+    color: yellow;
+}
+
+.hard-skill h2 {
+    color: green;
+}
+
+.soft-skill ul, .hard-skill ul {
+    list-style: none;
+    padding: 0;
+}
+
+.soft-skill li {
+    background-color: yellow;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    display: inline-block;
+    width: 80%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    -webkit-text-stroke: 0.8px black;
+}
+
+.hard-skill li {
+    background-color: green;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    display: inline-block;
+    width: 80%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    -webkit-text-stroke: 0.8px black;
+}
+
+.vertical-divider {
+    width: 10px;
+    height: 450px;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+    margin: 0 30px;
+}
+
+.vertical-divider::before, .vertical-divider::after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.vertical-divider::before {
+    top: 0px;
+}
+
+.vertical-divider::after {
+    bottom: -10px;
+}
+
+/*BATAS*/
+header {
+    background-color: darkblue;
+    padding: 10px 0;
+}
+
+.menu-nav4 {
+    display: flex;
+    align-items: center;
+}
+
+.profil-teks4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-left: 4px;
+}
+.navbar4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.profil {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.ul4 {
+    list-style: none;
+    display: flex;
+}
+
+.ul4 li {
+    margin-left: 20px;
+}
+
+.ul4 li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: red 0.3s;
+}
+
+.ul4 li a:hover, .ul4 li a.active {
+    background-color: red;
+}
+
+
+.konten4 {
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.minat-judul {
+    font-size: 40px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.sub4 {
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    margin: 5px 0 50px 0;
+}
+
+.isi-minat {
+    margin-left: 50px;
+    text-align: left;
+}
+
+.isi-minat h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.isi-minat p {
+
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 60px;
+    max-width: 800px;
+
+}
+
+.isi-minat ul {
+    list-style-type: disc;
+    padding-left: 20px;
+
+}
+
+.isi-minat li {
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 5px;
+}
